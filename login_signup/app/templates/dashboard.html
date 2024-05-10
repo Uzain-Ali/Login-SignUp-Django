@@ -1,0 +1,7 @@
+{% extends 'layouts/app.html' %} {% block content %} {% include 'navbar.html' %}
+<div class="mt-5 d-flex justify-content-center flex-column align-items-center">
+  <h1>Dashboard : {{ request.user.username }}</h1>
+  <a href="{% url 'logout' %}" class="btn btn-dark">Logout</a>
+</div>
+
+{% endblock %}
